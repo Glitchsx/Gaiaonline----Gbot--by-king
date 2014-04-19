@@ -40,7 +40,9 @@ class gbot(threading.Thread):
             self.update_gold()
             self.helpy.display(self.username + " : " + self.gold_amt )
             self.grab_dailies()
+            self.cashout()
             while True:
+                self.pull()
                 self.vote_arena()
                 self.dumpster_dive()
         else:
@@ -103,7 +105,7 @@ class gbot(threading.Thread):
                     reward = re.search('<name>(.*?)</name>', response ).group(1)
                     self.helpy.display(self.username+ ": found " + reward )
                 else:
-                    self.helpy.display("Daily Failed")
+                    self.helpy.display(self.username + " : Dailies Failed...skipping...")
                     break
             except:
                 pass
@@ -118,7 +120,7 @@ class gbot(threading.Thread):
         try:
             response = self.br.open(url, "mode=showConfirmed").read()
             reward = re.search('<div id="grant_text1">(.*?)</div>', response).group(1)
-            self.helpy.display(self.username + " : Found " + reward)
+            self.helpy.display("|||||" + ": Found " + reward)
             Timer.sleep(random.randint(60*6))
         except:
             return None
