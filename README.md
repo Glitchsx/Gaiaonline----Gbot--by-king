@@ -3,15 +3,16 @@ GBot by King
 
 A multi-function gaiaonline bot, written by king
 
-4/18/2014
+5/30/2014
 
-www.glitch.sx
+visit glitch.sx for support forums
+
+mechanize is now included for easier use.
 
 Setup & Installation
 ==============
 
 - Install python 2.7
-- Requires Mechanize
 - Write accounts to accounts.txt
 
 Functions
