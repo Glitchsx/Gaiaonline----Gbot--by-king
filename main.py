@@ -1,9 +1,9 @@
 '''/
 Author: @king
-Date: 4/17/2014
+Date: 5/30/2014
 Description: Gaiaonine gbot [ daily chance, slots, dumpster-dive, multi-account]
 Website: www.glitch.sx
-Version: 3.1.100
+Version: 4.1.100
 Keywords: gaiaonline, avatar, forum, login, forms, python, hack, cheat, bot, script, tool, mechanize, automated
 cheat, gold, gen, generator, tektek, golden, engine, how, to, bot, chaos, working, daily chance, slots, dumpster-dive, multi,
 mule, farm, engine, botters,
